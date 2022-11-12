@@ -1,0 +1,16 @@
+.bg-video {
+    z-index: 20;
+}
+
+.bg-video::after {
+    content: "";
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    /* background: black; */
+    background-image: -webkit-gradient(linear, left top, left bottom, from(transparent), to(black));
+    background-image: linear-gradient(180deg, transparent, black);
+    z-index: 10;
+}
