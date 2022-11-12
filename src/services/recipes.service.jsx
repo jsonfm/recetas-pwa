@@ -1,6 +1,7 @@
 import { ingredients } from "./ingredients";
 import { recipes } from "./recipes";
 import { tags } from "./tags";
+import { groceries } from "./groceries";
 
 
 export class RecipesService {
@@ -18,6 +19,10 @@ export class RecipesService {
 
     getTags(){
         return tags;
+    }
+
+    getGroceries(){ 
+        return groceries;
     }
 }
 

@@ -14,7 +14,7 @@ import { Profile } from "@/pages/Profile";
 
 function App() {
   return (
-    <div className="App">
+    <div className="App max-w-[600px] mx-auto">
       <Layout>
         <Routes>
           <Route path="/recipes" element={ <Home />}/>
