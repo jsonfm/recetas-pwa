@@ -3,4 +3,8 @@
 @tailwind utilities;
 
 
-
+@layer components {
+    .recipe-card-shadow {
+        box-shadow: 4px 0px 8px rgba(78, 78, 78, 0.224);
+    }
+}
