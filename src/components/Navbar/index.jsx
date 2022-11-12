@@ -19,7 +19,7 @@ export const Navbar = () => {
     return(
         <nav className={`${hide && 'hidden'} bg-[#fff] fixed bottom-0 px-4 flex justify-around items-center h-16 w-full`}>
             <NavLink 
-                to="/" 
+                to="/recipes" 
                 className={classNameCallback}
             >
                 <UilRestaurant />

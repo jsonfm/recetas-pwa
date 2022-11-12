@@ -18,11 +18,11 @@ export const Welcome = () => {
                 <div className="text-darkd relative z-20 mt-[45vh] max-w-[400px] px-4 ">
                 <h3 className="text-4xl font-bold mb-4">Welcome to Daily Recipe App</h3>
                 <p className="mb-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid, molestias?</p>
-                <Link to="/" className="btn btn-primary btn-rounded mb-6">
+                <Link to="/recipes" className="btn btn-primary btn-rounded mb-6">
                     <UilEnvelopeAlt/>
                     <p>Signup with Email</p>
                 </Link>
-                <Link to="/" className="btn btn-light btn-rounded">
+                <Link to="/recipes" className="btn btn-light btn-rounded">
                     <UilApple/>
                     <p>Signup with Apple</p>
                 </Link>
