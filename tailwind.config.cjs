@@ -19,5 +19,7 @@ module.exports = {
       tertiary: '#FEC740'
     }
   },
-  plugins: [],
+  plugins: [
+    require('tailwind-scrollbar'),
+  ],
 }
