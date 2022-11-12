@@ -6,7 +6,7 @@ import { Layout } from "@/components/Layout";
 // Pages
 import { Home } from "@/pages/Home";
 import { Detail } from "@/pages/Detail";
-
+import { Welcome } from "@/pages/Welcome";
 
 function App() {
   return (
@@ -14,6 +14,7 @@ function App() {
       <Layout>
         <Routes>
           <Route path="/" element={ <Home />}/>
+          <Route path="/welcome" element={ <Welcome />}/>
           <Route path="/detail" element={ <Detail />}/>
         </Routes>
       </Layout>

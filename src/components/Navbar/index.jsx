@@ -6,11 +6,15 @@ import { UilSearch } from '@iconscout/react-unicons'
 import { UilListUl } from '@iconscout/react-unicons'
 import { UilUser } from '@iconscout/react-unicons'
 
+import { useLocation } from "react-router-dom";
 
 export const Navbar = () => {
+    const location = useLocation();
+    const hide = location.pathname.includes("welcome");
     const commonClassName = "flex flex-col items-center";
+    
     return(
-        <nav className="fixed bottom-0 px-4 flex justify-around items-center h-16 w-full">
+        <nav className={`${hide && 'hidden'}  fixed bottom-0 px-4 flex justify-around items-center h-16 w-full`}>
             <NavLink className="flex flex-col items-center">
                 <UilRestaurant />
                 <p className="text-sm">Recipes</p>
