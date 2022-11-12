@@ -5,6 +5,7 @@
 
 * {
     font-family: 'Roboto', sans-serif;
+    transition: .25s;
 }
 
 @layer components {
@@ -40,5 +41,15 @@
     .scrollbar-hide {
         -ms-overflow-style: none;  /* IE and Edge */
         scrollbar-width: none;  /* Firefox */
+    }
+
+
+    /* tags */
+    .tag {
+        @apply px-2 py-1 min-w-[100px] text-center text-darka rounded-full border border-darkb;
+    }
+
+    .tag:hover {
+        @apply bg-primary text-darkd;
     }
 }
