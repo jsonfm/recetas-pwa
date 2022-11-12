@@ -1,9 +1,11 @@
 import { RecipeCard } from "@/components/RecipeCard";
+import { recipesService } from "@/services/recipes.service";
 import { IngredientCard } from "@/components/IngredientCard";
 
-const ingredients = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
 export const Home = () => {
+    const ingredients = recipesService.getIngredients();
+
     return (
         <section className="pb-20 pt-12">
             <p className="text-dark0 text-xl font-semibold px-4">Recipes</p>
@@ -18,7 +20,7 @@ export const Home = () => {
             </div>
             <div className="grid grid-rows-2 grid-flow-col gap-4 overflow-x-auto scrollbar-hide py-6 px-4">
                 {ingredients.map(ingredient => (
-                    <IngredientCard/>
+                    <IngredientCard {...ingredient}/>
                 ))}
             </div>
         </section>
