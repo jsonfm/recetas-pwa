@@ -12,7 +12,7 @@ export const RecipeCard = () => {
                 alt="recipe-img"
                 class="h-40 w-72 object-cover rounded-t-2xl"
             />
-            <div class="px-2 pt-2">
+            <div class="px-4 pt-2">
                 <h5 class="mt-1 mb-2 text-dark0 font-bold">Recipe Name</h5>
                 <div class="flex flex-col gap-2 w-full text-primary">
                     <div class="flex gap-2">

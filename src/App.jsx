@@ -7,6 +7,10 @@ import { Layout } from "@/components/Layout";
 import { Home } from "@/pages/Home";
 import { Detail } from "@/pages/Detail";
 import { Welcome } from "@/pages/Welcome";
+import { Explore } from "@/pages/Explore";
+import { Grocery } from "@/pages/Grocery";
+import { Profile } from "@/pages/Profile";
+
 
 function App() {
   return (
@@ -16,6 +20,9 @@ function App() {
           <Route path="/" element={ <Home />}/>
           <Route path="/welcome" element={ <Welcome />}/>
           <Route path="/detail" element={ <Detail />}/>
+          <Route path="/explore" element={ <Explore />}/>
+          <Route path="/grocery" element={ <Grocery />}/>
+          <Route path="/profile" element={ <Profile />}/>
         </Routes>
       </Layout>
     </div>
