@@ -27,7 +27,7 @@ export const Welcome = () => {
                     <p>Signup with Apple</p>
                 </Link>
 
-                <p className="text-center mt-6 underline">Alredy have an account?</p>
+                <p className="text-center mt-6 underline">Already have an account?</p>
                 </div>
             </div>
         </section>

@@ -11,23 +11,37 @@ import { useLocation } from "react-router-dom";
 export const Navbar = () => {
     const location = useLocation();
     const hide = location.pathname.includes("welcome");
-    const commonClassName = "flex flex-col items-center";
-
+    const linkClassName = "flex flex-col items-center justify-center pt-2";
+    const activeClassName = "border-t-4 border-t-primary ";
+    const disableClassName = "text-darka";
+    const classNameCallback = ({ isActive }) => `${linkClassName} ${isActive ? activeClassName : disableClassName}`
     return(
         <nav className={`${hide && 'hidden'} bg-[#fff] fixed bottom-0 px-4 flex justify-around items-center h-16 w-full`}>
-            <NavLink to="/" className="flex flex-col items-center">
+            <NavLink 
+                to="/" 
+                className={classNameCallback}
+            >
                 <UilRestaurant />
                 <p className="text-sm">Recipes</p>
             </NavLink>
-            <NavLink to="/explore" className="flex flex-col items-center">
+            <NavLink 
+                to="/explore" 
+                className={classNameCallback}
+            >
                 <UilSearch />
                 <p className="text-sm">Explore</p>
             </NavLink>
-            <NavLink to="/grocery" className="flex flex-col items-center">
+            <NavLink 
+                to="/grocery" 
+                className={classNameCallback}
+            >
                 <UilListUl  />
                 <p className="text-sm">Grocery</p>
             </NavLink>
-            <NavLink to="/profile"  className="flex flex-col items-center">
+            <NavLink 
+                to="/profile"  
+                className={classNameCallback}
+            >
                 <UilUser />
                 <p className="text-sm">Profile</p>
             </NavLink>
