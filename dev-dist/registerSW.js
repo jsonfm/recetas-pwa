@@ -1,0 +1,1 @@
+if('serviceWorker' in navigator) navigator.serviceWorker.register('/recipes-pwa/dev-sw.js?dev-sw', { scope: '/recipes-pwa/', type: 'classic' })

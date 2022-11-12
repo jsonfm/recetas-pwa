@@ -10,7 +10,7 @@ import { useLocation } from "react-router-dom";
 
 export const Navbar = () => {
     const location = useLocation();
-    const hide = location.pathname.includes("welcome");
+    const hide = location.pathname.includes(" ");
     const linkClassName = "flex flex-col items-center justify-center pt-2";
     const activeClassName = "border-t-4 border-t-primary ";
     const disableClassName = "text-darka";
