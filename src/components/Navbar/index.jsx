@@ -14,7 +14,8 @@ export const Navbar = () => {
     const linkClassName = "flex flex-col items-center justify-center pt-2";
     const activeClassName = "border-t-4 border-t-primary ";
     const disableClassName = "text-darka";
-    const classNameCallback = ({ isActive }) => `${linkClassName} ${isActive ? activeClassName : disableClassName}`
+    const classNameCallback = ({ isActive }) => `${linkClassName} ${isActive ? activeClassName : disableClassName}`;
+    
     return(
         <nav className={`${hide && 'hidden'} bg-[#fff] fixed bottom-0 px-4 flex justify-around items-center h-16 w-full`}>
             <NavLink 

@@ -1,5 +1,5 @@
 import { UilClock } from '@iconscout/react-unicons';
-import { UilHeadSide } from '@iconscout/react-unicons';
+import { UilUser } from '@iconscout/react-unicons';
 import { UilHeart } from '@iconscout/react-unicons';
 import { UilBookmarkFull } from '@iconscout/react-unicons';
 
@@ -13,14 +13,14 @@ export const RecipeCard = () => {
                 class="h-40 w-72 object-cover rounded-t-2xl"
             />
             <div class="px-4 pt-2">
-                <h5 class="mt-1 mb-2 text-dark0 font-bold">Recipe Name</h5>
+                <h5 class="mt-1 mb-2 text-dark0 font-semibold">Recipe Name</h5>
                 <div class="flex flex-col gap-2 w-full text-primary">
                     <div class="flex gap-2">
                         <UilClock/>
                         <p class="text-darka">25 mins</p>
                     </div>
                     <div class="flex gap-2">
-                        <UilHeadSide />
+                        <UilUser />
                         <p class="text-darka">4 servings</p>
                     </div>
                     <div class="flex justify-between">
