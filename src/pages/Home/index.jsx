@@ -8,7 +8,7 @@ export const Home = () => {
 
     return (
         <section className="pb-20 pt-12">
-            <p className="text-dark0 text-xl font-semibold px-4">Recipes</p>
+            <h4 className="font-semibold text-2xl px-4 mb-6">Recipes</h4>
             <div className="w-full flex gap-4 overflow-x-auto overscroll-x-auto scrollbar-hide py-2 px-4">
                 <RecipeCard/>
                 <RecipeCard/>

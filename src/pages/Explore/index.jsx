@@ -11,7 +11,7 @@ export const Explore = () => {
 
     return (
         <section className="pt-12 pb-20 px-4">
-            <h4 className="mb-4 font-semibold text-xl">Explore</h4>
+            <h4 className="font-semibold text-2xl mb-6">Explore</h4>
             <div className="flex items-center bg-darkd text-darkb px-4 py-3 rounded-full">
                 <UilSearch />
                 <input type="text" className="w-full bg-darkd text-darkb outline-none border-none px-4" placeholder="What are you craving ?"/>

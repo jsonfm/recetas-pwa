@@ -10,7 +10,7 @@ export const Profile = () => {
                 <div className="flex flex-col justify-center">
                     <p className="text-xl font-semibold mb-1">Robert Watson</p>
                     <p className="text-darka mb-4">robertwatson@exmaple.com</p>
-                    <button className="btn btn-rounded text-darka border px-0 py-2 w-[180px]">
+                    <button className="btn btn-light btn-rounded border px-0 py-2 w-[180px]">
                         Change profile
                     </button>
                 </div>

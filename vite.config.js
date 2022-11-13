@@ -8,12 +8,12 @@ export default defineConfig({
   base: "/recipes-pwa/",
   plugins: [
     react(),  
-    VitePWA({ 
-      registerType: 'autoUpdate',
-      devOptions: {
-        enabled: true
-      }
-    })
+    // VitePWA({ 
+    //   registerType: 'autoUpdate',
+    //   devOptions: {
+    //     enabled: true
+    //   }
+    // })
   ],
   resolve: {
     alias: [{ find: '@', replacement: path.resolve(__dirname, 'src') }],

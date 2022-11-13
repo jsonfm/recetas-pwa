@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { UilClock } from '@iconscout/react-unicons';
 import { UilUser } from '@iconscout/react-unicons';
 import { UilHeart } from '@iconscout/react-unicons';
@@ -6,7 +7,7 @@ import { UilBookmarkFull } from '@iconscout/react-unicons';
 
 export const RecipeCard = () => {
     return (
-        <div className="min-w-fit w-72 h-80 rounded-2xl recipe-card-shadow">
+        <Link to="/detail" className="min-w-fit w-72 h-80 rounded-2xl recipe-card-shadow">
             <img 
                 src="https://images.pexels.com/photos/461198/pexels-photo-461198.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
                 alt="recipe-img"
@@ -32,6 +33,6 @@ export const RecipeCard = () => {
                     </div>
                 </div>
             </div>
-        </div>
+        </Link>
     )
 }

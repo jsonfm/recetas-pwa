@@ -17,7 +17,11 @@
     }
 
     .btn {
-        @apply px-4 py-3 flex justify-center items-center gap-2;
+        @apply px-4 py-3 flex justify-center items-center gap-2 cursor-pointer;
+    }
+
+    .btn:hover {
+        @apply tracking-wide;
     }
 
     .btn-rounded {
@@ -30,6 +34,10 @@
 
     .btn-light {
         @apply bg-darkd text-dark0;
+    }
+
+    .btn-light:hover {
+        @apply bg-primary text-darkd;
     }
 
     /* For Webkit-based browsers (Chrome, Safari and Opera) */
