@@ -14,8 +14,7 @@ export default defineConfig({
       workbox: {
         globPatterns: ['**/*.{js,css,html,ico,png,svg}']
       },
-
-      includeAssets: ['favicon.ico', 'apple-touch-icon.png', 'masked-icon.svg'],
+      includeAssets: ['public/favicon.ico', 'public/apple-touch-icon.png'],
       manifest: {
         name: 'Recipes PWA',
         short_name: 'Recipy',
@@ -23,13 +22,13 @@ export default defineConfig({
         theme_color: '#ffffff',
         icons: [
           {
-            src: 'pwa-192x192.png',
+            src: 'android-chrome-192x192.png',
             sizes: '192x192',
             type: 'image/png'
           },
           {
-            src: 'pwa-512x512.png',
-            sizes: '512x512',
+            src: 'android-chrome-384x384.png',
+            sizes: '384x384',
             type: 'image/png'
           }
         ]

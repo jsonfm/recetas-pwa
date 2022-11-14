@@ -10,8 +10,8 @@ export const Welcome = () => {
             <video
                 src="https://www.shutterstock.com/shutterstock/videos/34559794/preview/stock-footage-chef-serves-salad-on-the-plate-in-restaurant.webm"
                 className="absolute top-0 left-0 object-cover h-screen w-full"
-                autoplay="autoplay"
-                loop="true"
+                autoPlay="autoplay"
+                loop={true}
                 muted
             />
             <div className="bg-video">
