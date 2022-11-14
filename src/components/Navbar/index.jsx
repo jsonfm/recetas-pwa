@@ -17,7 +17,7 @@ export const Navbar = () => {
     const classNameCallback = ({ isActive }) => `${linkClassName} ${isActive ? activeClassName : disableClassName}`;
     
     return(
-        <nav className={`${hide && 'hidden'} bg-[#fff] fixed bottom-0 px-4 flex justify-around items-center h-16 w-full`}>
+        <nav className={`${hide && 'hidden'} bg-[#fff] fixed bottom-0 px-4 flex justify-around items-center h-16 w-full max-w-[600px]`}>
             <NavLink 
                 to="/recipes" 
                 className={classNameCallback}
