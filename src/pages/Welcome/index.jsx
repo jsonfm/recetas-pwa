@@ -6,7 +6,7 @@ import "./styles.css";
 
 export const Welcome = () => {
     return (
-        <section className="overflow-hidden">
+        <section className="overflow-hidden fixed top-0 left-0 min-h-screen w-screen z-20">
             <video
                 src="https://www.shutterstock.com/shutterstock/videos/34559794/preview/stock-footage-chef-serves-salad-on-the-plate-in-restaurant.webm"
                 className="absolute top-0 left-0 object-cover h-screen w-full"
@@ -15,7 +15,7 @@ export const Welcome = () => {
                 muted
             />
             <div className="bg-video">
-                <div className="text-darkd relative z-20 mt-[45vh] max-w-[400px] px-4 ">
+                <div className="text-darkd relative z-20 mt-[45vh] max-w-[400px] mx-auto px-4 ">
                 <h3 className="text-4xl font-bold mb-4">Welcome to Daily Recipe App</h3>
                 <p className="mb-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid, molestias?</p>
                 <Link to="/recipes" className="btn btn-primary btn-rounded mb-6">

@@ -1,6 +1,7 @@
 .bg-video {
     z-index: 20;
     margin: 0 auto;
+    left: 0;
 }
 
 .bg-video::after {
