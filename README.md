@@ -8,7 +8,6 @@ A food recipe PWA with ReactJS. The app uses vite to package the files and Tailw
 ### 🎨 Design
 Inspired by [Behance](https://www.behance.net/gallery/102048063/Daily-Recipe-Mobile-App-Interaction-Cooking?tracking_souAdjunto)
 
-
 ### ⚡️ Development
 ```
 npm run dev
